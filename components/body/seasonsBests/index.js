@@ -3,22 +3,22 @@ import styles from "./styles.module.css"
 class SeasonsBests extends React.Component {
     render() {
         return(
-            <body>
-            <div className={styles.athleteName}>
+            <div>
+            <div className={styles.seasonsBest}>
                 Season's Bests
             </div>
-            <div className={styles.athleteInfoContainer}>
-                <div className={styles.athleteAge}>
+            <div className={styles.seasonBestContainer}>
+                <div className={styles.firstSeasonBest}>
                 400mH: 45.96
                 </div>
-                <div className={styles.athleteCountry}>
+                <div className={styles.secondSeasonBest}>
                 400m: 44.98
                 </div>
-                <div className={styles.athletePrimaryEvent}>
+                <div className={styles.thirdSeasonBest}>
                 4x100m Relay: 38.76
                 </div>
             </div>
-        </body>
+        </div>
         )
     }
 }

@@ -5,7 +5,7 @@ import styles from "./styles.module.css"
 class AthleteInfo extends React.Component {
     render() {
         return(
-            <body>
+            <div>
                 <div className={styles.athleteName}>
                     Karsten Warholm
                 </div>
@@ -21,7 +21,7 @@ class AthleteInfo extends React.Component {
                     Primary Event: 400mH
                     </div>
                 </div>
-            </body>
+            </div>
         )
     }
 }

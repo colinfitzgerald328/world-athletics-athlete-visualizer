@@ -1,4 +1,4 @@
-.athleteName {
+.seasonsBest {
     font-size: 40px;
     color: white;
     margin-bottom: 20px;
@@ -6,11 +6,11 @@
     font-weight: bold; 
 }
 
-.athleteImage {
+.seasonBestContainer {
     max-width: 100%;
 }
 
-.athleteAge {
+.firstSeasonBest {
     margin-top: 20px;
     font-size: 25px;
     color: white;
@@ -18,7 +18,7 @@
     font-weight: bold; 
 }
 
-.athleteCountry {
+.secondSeasonBest {
     margin-top: 20px;
     font-size: 25px;
     color: white;
@@ -26,7 +26,7 @@
     font-weight: bold; 
 }
 
-.athletePrimaryEvent {
+.thirdSeasonBest {
     margin-top: 20px;
     font-size: 25px;
     color: white;
