@@ -24,7 +24,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [ ] build api which we can query from 
 - [ ] build landing page 
 
-
+[Link to current deployment](https://world-athletics-athlete-visualizer-10q1v4af2-colinfitzgerald328.vercel.app/)
 
 
 ## Deploy on Vercel
