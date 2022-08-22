@@ -1,11 +1,17 @@
 .container {
     position: fixed;
     width: 1000px;
-    height: 400px;
+    height: 800px;
     padding: 10px;
     background-color: #0E2A47;
     top: 50%;
     left: 50%;
-    margin-top: -200px;  /* Negative half of height. */
+    margin-top: -400px;  /* Negative half of height. */
     margin-left: -500px;  /* Negative half of width. */
+  }
+
+  .floatChild {
+      width: 50%;
+      float: left;
+      padding: 30px;
   }

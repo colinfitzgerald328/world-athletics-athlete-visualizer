@@ -1,0 +1,36 @@
+.athleteName {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+}
+
+.athleteImage {
+    max-width: 100%;
+}
+
+.athleteAge {
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+}
+
+.athleteCountry {
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+}
+
+.athletePrimaryEvent {
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+}
