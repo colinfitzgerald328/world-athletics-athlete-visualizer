@@ -5,7 +5,7 @@ class SeasonsBests extends React.Component {
         return(
             <div>
             <div className={styles.seasonsBest}>
-                Season's Bests
+                Season&#8217;s Bests
             </div>
             <div className={styles.seasonBestContainer}>
                 <div className={styles.firstSeasonBest}>
