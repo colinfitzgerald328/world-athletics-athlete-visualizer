@@ -1,31 +1,31 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## World Athletics Athlete Statistics Visualizer 
 
-First, run the development server:
+#### Primary Goal of the Project 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- The primary goal of this project is to build a simpler version of the World Athletics Profile for each athlete. This project aims to make it simpler for the user to see what an athlete's season's bests are by day. The plan for this project is to build in new features and extra functionality over time. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### What is Currently Done 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- I currently have a static version of the project built. Here's what it looks like: 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Screen Shot 2022-08-21 at 7 57 06 PM](https://user-images.githubusercontent.com/64982557/185830488-76f81c9e-157d-4cea-b1f4-8607874d0863.png)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### What is Still Left to be Done
+
+- [ ] build out mock search bar 
+- [ ] build search form into functional form 
+- [ ] finish building backend
+- [ ] build api which we can query from 
+- [ ] build landing page 
+
+
+
 
 ## Deploy on Vercel
 
