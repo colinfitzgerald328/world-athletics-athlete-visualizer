@@ -1,0 +1,11 @@
+.container {
+    position: fixed;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+    background-color: #0E2A47;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;  /* Negative half of height. */
+    margin-left: -500px;  /* Negative half of width. */
+  }
