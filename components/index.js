@@ -1,12 +1,12 @@
 import React from "react";
 import Body from "./body";
-import styles from "./styles.module.css"
+import SearchBar from "./searchBar";
 
 class Root extends React.Component {
     render() {
         return(
             <div>
-            <Body/> 
+            <SearchBar/>
             </div>
         )
     }
@@ -14,3 +14,4 @@ class Root extends React.Component {
 
 
 export default Root
+
