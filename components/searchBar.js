@@ -18,15 +18,21 @@ const SearchBar = () => {
 
   return (
     <div className={styles.main}>
+      <div className={styles.searchBar}>
       <Input
         type="text"
         placeholder="Search..."
         value={query}
         onChange={(event) => setQuery(event.target.value)}
       />
+      <div className={styles.button}>
       <Button onClick={handleSearch}>Search</Button>
-      <h3>{name}</h3>
+       </div>
+       </div>
+     
+    
       <div className={styles.results}>
+      <h3>{name}</h3>
         {results.map((result) => (
           <div key={result.event_id}>
             <p>Date: {result.date}</p>
