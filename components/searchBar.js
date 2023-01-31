@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Input, Button } from "@nextui-org/react";
+import { Input, Button, Table } from "@nextui-org/react";
 import styles from "./styles.module.css";
 
 const SearchBar = () => {
@@ -16,6 +16,25 @@ const SearchBar = () => {
     setResults(data["marks"]);
   };
 
+  const columns = [
+    {
+      key: "date",
+      label: "Date",
+    },
+    {
+      key: "event_distance",
+      label: "Distance",
+    },
+    {
+      key: "mark",
+      label: "Time",
+    },
+    {
+      key: "venue",
+      label: "Venue",
+    },
+  ];
+
   return (
     <div className={styles.main}>
       <div className={styles.searchBar}>
@@ -29,18 +48,25 @@ const SearchBar = () => {
       <Button onClick={handleSearch}>Search</Button>
        </div>
        </div>
-     
-    
       <div className={styles.results}>
       <h3>{name}</h3>
-        {results.map((result) => (
-          <div key={result.event_id}>
-            <p>Date: {result.date}</p>
-            <p>Distance: {result.event_distance}</p>
-            <p>Time: {result.mark}</p>
-            <p>Venue: {result.venue}</p>
-          </div>
-        ))}
+      <Table
+      bordered
+      shadow={false}
+      aria-label="Example static bordered collection table"
+    >
+            <Table.Header columns={columns}>
+                    {(column) => (
+                        <Table.Column key={column.key}>{column.label}</Table.Column>
+                    )}
+                </Table.Header>
+                <Table.Body items={results}>
+                    {(item) => (
+                        <Table.Row key={item.event_id}>
+                            {(columnKey) => <Table.Cell>{item[columnKey]}</Table.Cell>}
+                        </Table.Row>
+                    )}
+                </Table.Body></Table>
       </div>
     </div>
   );
