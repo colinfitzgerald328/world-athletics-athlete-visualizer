@@ -18,21 +18,13 @@ const SearchBar = () => {
 
   const columns = [
     {
-      key: "date",
-      label: "Date",
-    },
-    {
       key: "event_distance",
       label: "Distance",
     },
     {
       key: "mark",
       label: "Time",
-    },
-    {
-      key: "venue",
-      label: "Venue",
-    },
+    }
   ];
 
   return (
