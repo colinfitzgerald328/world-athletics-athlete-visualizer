@@ -21,12 +21,20 @@ const SearchBar = () => {
 
   const columns = [
     {
+      key: "date",
+      label: "Date",
+    },
+    {
       key: "event_distance",
       label: "Distance",
     },
     {
       key: "mark",
       label: "Time",
+    }, 
+    {
+      key: "venue", 
+      label: "Venue"
     }
   ];
 
@@ -54,23 +62,27 @@ const SearchBar = () => {
 
   return (
     <div className={styles.main}>
-      <p>Welcome to the world athletics search bar!</p>
-      <p>Search for an athlete of your choosing.</p> 
+      <h1>World Athletics Season Best Search</h1>
+      <p>Welcome to the world athletics search bar! Search for an athlete of your choosing.</p> 
       <p>If you would like to add an athlete, feel free to do so. Happy searching!</p>
+      <div>
       <div className={styles.searchBar}>
       <Input
         type="text"
         placeholder="Search..."
         value={query}
         onChange={(event) => setQuery(event.target.value)}
+        css={{"width": "200px"}}
       />
+      </div>
       <div className={styles.button}>
-      <Button onClick={handleSearch}>Search</Button>
+      <Button css={{"width": "200px"}} onClick={handleSearch}>Search</Button>
        </div>
        </div>
       <div className={styles.results}>
       <h3>{name}</h3>
       {results.length > 0 ? (
+        <div className={styles.resultsTable}>
         <Table
         bordered
         shadow={false}
@@ -87,11 +99,10 @@ const SearchBar = () => {
                               {(columnKey) => <Table.Cell>{item[columnKey]}</Table.Cell>}
                           </Table.Row>
                       )}
-                  </Table.Body></Table>
+                  </Table.Body></Table></div>
       ) : (
         <div></div>
       )}
-      
       </div>
       <div className={styles.addAthlete}>
         <p>Athlete you searched showing no results?</p>
@@ -103,10 +114,11 @@ const SearchBar = () => {
         placeholder="Athlete name..."
         value={athleteName}
         onChange={(event) => setAthleteName(event.target.value)}
+        css={{"width": "200px"}}
       />
         </div>
       <div className={styles.button}>
-      <Button css={{backgroundColor: "$green700"}} onClick={handleAthleteAdd}>Add</Button>
+      <Button css={{backgroundColor: "$green700", width: "200px"}} onClick={handleAthleteAdd}>Add</Button>
        </div>
        </div>
     </div>

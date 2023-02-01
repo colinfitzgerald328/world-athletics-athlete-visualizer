@@ -7,7 +7,6 @@ class Root extends React.Component {
     render() {
         return(
             <div className={styles.main}>
-            <h1>World Athletics Season Best Search</h1>
             <SearchBar/>
             </div>
         )
