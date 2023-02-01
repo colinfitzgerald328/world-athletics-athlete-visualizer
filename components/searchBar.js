@@ -54,6 +54,9 @@ const SearchBar = () => {
 
   return (
     <div className={styles.main}>
+      <p>Welcome to the world athletics search bar!</p>
+      <p>Search for an athlete of your choosing.</p> 
+      <p>If you would like to add an athlete, feel free to do so. Happy searching!</p>
       <div className={styles.searchBar}>
       <Input
         type="text"
