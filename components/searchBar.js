@@ -31,19 +31,23 @@ const SearchBar = () => {
   ];
 
   const handleAthleteAdd = async () => {
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ "athlete_name": athleteName })
-  };
-  fetch('https://world-athletics-376305.uc.r.appspot.com/addAthlete', requestOptions)
-      .then(response => response.json())
-      .then(data => setResponse({ data: data }));
-      if (response["data"]["operation"] == "success") {
-        toaster.success('Athlete added!')
-      } else {
-        toaster.danger('Failed to add athlete. Please email colinfitzgerald@berkeley.edu for help.')
-      }
+    if (athleteName == null) {
+      toaster.danger("Please enter an athlete name before pressing add.")
+    } else {
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ "athlete_name": athleteName })
+    };
+    fetch('https://world-athletics-376305.uc.r.appspot.com/addAthlete', requestOptions)
+        .then(response => response.json())
+        .then(data => setResponse({ data: data }));
+        if (response["data"]["operation"] == "success") {
+          toaster.success('Athlete added!')
+        } else {
+          toaster.danger('Failed to add athlete. Please email colinfitzgerald@berkeley.edu for help.')
+        }
+    }
   };
 
   
@@ -63,36 +67,44 @@ const SearchBar = () => {
        </div>
       <div className={styles.results}>
       <h3>{name}</h3>
-      <Table
-      bordered
-      shadow={false}
-      aria-label="Example static bordered collection table"
-    >
-            <Table.Header columns={columns}>
-                    {(column) => (
-                        <Table.Column key={column.key}>{column.label}</Table.Column>
-                    )}
-                </Table.Header>
-                <Table.Body items={results}>
-                    {(item) => (
-                        <Table.Row key={item.event_id}>
-                            {(columnKey) => <Table.Cell>{item[columnKey]}</Table.Cell>}
-                        </Table.Row>
-                    )}
-                </Table.Body></Table>
+      {results.length > 0 ? (
+        <Table
+        bordered
+        shadow={false}
+        aria-label="Example static bordered collection table"
+      >
+              <Table.Header columns={columns}>
+                      {(column) => (
+                          <Table.Column key={column.key}>{column.label}</Table.Column>
+                      )}
+                  </Table.Header>
+                  <Table.Body items={results}>
+                      {(item) => (
+                          <Table.Row key={item.event_id}>
+                              {(columnKey) => <Table.Cell>{item[columnKey]}</Table.Cell>}
+                          </Table.Row>
+                      )}
+                  </Table.Body></Table>
+      ) : (
+        <div></div>
+      )}
+      
       </div>
-      <div className={styles.searchBar}>
-        Athlete you searched showing no results? They may not be in our database yet. 
-        Add them here! 
-      </div>
-      <Input
+      <div className={styles.addAthlete}>
+        <p>Athlete you searched showing no results?</p>
+        <p>They may not be in our database yet. </p>
+        <p>Add them here!</p>
+        <div className={styles.addAthletInput}>
+        <Input
         type="text"
         placeholder="Athlete name..."
         value={athleteName}
         onChange={(event) => setAthleteName(event.target.value)}
       />
+        </div>
       <div className={styles.button}>
-      <Button onClick={handleAthleteAdd}>Add</Button>
+      <Button css={{backgroundColor: "$green700"}} onClick={handleAthleteAdd}>Add</Button>
+       </div>
        </div>
     </div>
   );
