@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head'
 import { Input, Button, Table } from "@nextui-org/react";
 import { toaster } from 'evergreen-ui'
 import styles from "./styles.module.css";
@@ -62,6 +63,9 @@ const SearchBar = () => {
 
   return (
     <div className={styles.main}>
+      <Head>
+        <title>World Athletics Athlete Search</title>
+      </Head>
       <h1>World Athletics Season Best Search</h1>
       <p>Welcome to the world athletics search bar! Search for an athlete of your choosing.</p> 
       <p>If you would like to add an athlete, feel free to do so. Happy searching!</p>
@@ -87,6 +91,7 @@ const SearchBar = () => {
         bordered
         shadow={false}
         aria-label="Example static bordered collection table"
+
       >
               <Table.Header columns={columns}>
                       {(column) => (
