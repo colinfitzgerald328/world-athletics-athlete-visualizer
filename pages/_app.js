@@ -1,16 +1,28 @@
 // 1. import `NextUIProvider` component
 import { NextUIProvider } from '@nextui-org/react';
-import ReactGA from 'react-ga';
-const TRACKING_ID = "G-BLNL1C2C1B"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+import Head from 'next/head';
+import React from 'react';
+import { initGA, logPageView } from '../lib/analytics';
 
-function MyApp({ Component, pageProps }) {
-  return (
-    // 2. Use at the root of your app
-    <NextUIProvider>
-      <Component {...pageProps} />
-    </NextUIProvider>
-  );
+class MyApp extends React.Component {
+  componentDidMount() {
+    initGA('G-BLNL1C2C1B');
+    logPageView();
+  }
+
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <>
+        <Head>
+          hi
+        </Head>
+        <NextUIProvider>
+          <Component {...pageProps} />
+        </NextUIProvider>
+      </>
+    );
+  }
 }
 
 export default MyApp;
