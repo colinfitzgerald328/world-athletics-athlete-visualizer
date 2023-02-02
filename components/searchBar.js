@@ -65,6 +65,7 @@ const SearchBar = () => {
     <div className={styles.main}>
       <Head>
         <title>World Athletics Athlete Search</title>
+        
       </Head>
       <h1>World Athletics Season Best Search</h1>
       <p>Welcome to the world athletics search bar! Search for an athlete of your choosing.</p> 
