@@ -5,9 +5,9 @@ import SearchBar from "./searchBar";
 
 class Root extends React.Component {
     render() {
-        return(
+        return (
             <div className={styles.main}>
-            <SearchBar/>
+                <SearchBar/>
             </div>
         )
     }

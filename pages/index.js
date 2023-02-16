@@ -4,9 +4,9 @@ import styles from '../styles/Home.module.css'
 import Root from '../components'
 
 export default function Home() {
-  return (
-    <div>
-    <Root/>
-    </div>
-  )
+    return (
+        <div>
+            <Root/>
+        </div>
+    )
 }
