@@ -1,0 +1,129 @@
+repo_name: colinfitzgerald328/world-athletics-athlete-visualizer
+report_id: ad68207095b9bd7e0a37aeea981de56c
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-19T22:08:32+00:00'
+requested_by: colinfitzgerald328
+provider: github
+branch: main
+detected_tools_count: 10
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Next.js
+  description: 'A small framework for server-rendered universal JavaScript apps '
+  website_url: https://nextjs.org/
+  version: 12.2.5
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/5936/nextjs.png
+  detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2022-08-21 20:43:54.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2023-02-02 02:51:13.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2022-08-21 20:43:54.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2022-08-21 20:43:54.000000000 Z
+- name: eslint-config-next
+  description: ESLint configuration used by Next.js
+  package_url: https://www.npmjs.com/eslint-config-next
+  version: 12.2.5
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2023-01-31 05:01:03.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2023-02-02 02:51:13.000000000 Z
+- name: react-ga
+  description: React Google Analytics Module
+  package_url: https://www.npmjs.com/react-ga
+  version: 3.3.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18260/default_e883f2ab27e3b57d1e2e1d1474b09e7351e11b54.png
+  detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Colin FitzGerald
+  last_updated_on: 2023-02-02 02:51:13.000000000 Z
