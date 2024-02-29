@@ -2,7 +2,7 @@ repo_name: colinfitzgerald328/world-athletics-athlete-visualizer
 report_id: ad68207095b9bd7e0a37aeea981de56c
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:19:56+00:00'
+timestamp: '2024-02-29T19:07:35+00:00'
 requested_by: colinfitzgerald328
 provider: github
 branch: main
@@ -30,7 +30,7 @@ tools:
   detection_source_url: https://github.com/colinfitzgerald328/world-athletics-athlete-visualizer
   detection_source: Repo Metadata
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 12.2.5
   open_source: true
